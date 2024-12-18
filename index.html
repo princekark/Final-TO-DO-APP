@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Todo App</h1>
+        <form id="task-form">
+            <input type="text" id="task-name" placeholder="Task Name" required>
+            <input type="date" id="due-date" required>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div id="stats">
+            <p>Total Tasks: <span id="total-tasks">0</span></p>
+            <p>Completed Tasks: <span id="completed-tasks">0</span></p>
+            <p>Overdue Tasks: <span id="overdue-tasks">0</span></p>
+        </div>
+
+        <ul id="task-list"></ul>
+    </div>
+
+    <audio id="completion-sound" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>
